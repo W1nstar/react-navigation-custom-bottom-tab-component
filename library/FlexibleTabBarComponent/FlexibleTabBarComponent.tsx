@@ -252,7 +252,6 @@ class FlexibleTabBarComponent extends React.Component<Props> {
       <SafeAreaView style={[styles.container, style]}>
         {this.renderAnimatedBackground()}
         {routes.map((route, key) => {
-          console.log(route);
           const focused = key === state.index;
           return (
             <TouchableWithoutFeedback
